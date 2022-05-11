@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  constructor() { }
+  url: string = 'http://loiane.com';
+  cursoAngular: boolean = true;
+  urlImagem = 'htpp://lorempixel.com/400/200/nature';
+
+  getValor() {
+    return 1;
+  }
+
+  getCurtirCurso() {
+    return true;
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
