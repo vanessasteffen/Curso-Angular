@@ -4,15 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import {MeuFormComponent} from "./meu-form/meu-form.component";
+import {MeuFormModule} from "./meu-form/meu-form.module";
+import { InputPropertyComponent } from './input-property/input-property.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    InputPropertyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MeuFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
